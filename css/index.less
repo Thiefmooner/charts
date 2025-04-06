@@ -32,6 +32,16 @@ header{
 
 //页面主盒子
 .main-box{
-
-
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color:hotpink;
+  padding: 0.125rem 0.125rem 0;
+  .column{
+    flex:3;
+  }
+  .column:nth-child(2){
+    flex:5;
+  }
 }

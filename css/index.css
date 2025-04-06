@@ -27,4 +27,18 @@ header .show-time {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.25rem;
 }
+.main-box {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: hotpink;
+  padding: 0.125rem 0.125rem 0;
+}
+.main-box .column {
+  flex: 3;
+}
+.main-box .column:nth-child(2) {
+  flex: 5;
+}
 /*# sourceMappingURL=index.css.map */
