@@ -36,12 +36,21 @@ header{
   min-width: 1024px;
   max-width: 1920px;
   margin: 0 auto;
-  background-color:hotpink;
   padding: 0.125rem 0.125rem 0;
+
+  //3列column
   .column{
     flex:3;
   }
+  //3列column里的中间那个要占5
   .column:nth-child(2){
     flex:5;
+  }
+  .panel{
+    height: 3.875rem;
+    padding: 0 0.1875rem 0.5rem;
+    margin-bottom: 0.1875rem;
+    border: 1px solid rgba(25,186,139,0.17);
+    background: url("../img/line(1).png") rgba(255,255,255,0.04);
   }
 }
