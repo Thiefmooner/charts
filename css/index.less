@@ -47,10 +47,60 @@ header{
     flex:5;
   }
   .panel{
+    position: relative;
     height: 3.875rem;
     padding: 0 0.1875rem 0.5rem;
     margin-bottom: 0.1875rem;
     border: 1px solid rgba(25,186,139,0.17);
     background: url("../img/line(1).png") rgba(255,255,255,0.04);
+
+    //通过增加伪元素，设置样式，实现框的角
+    &::before{
+      position: absolute;
+      content:"";
+      top:0;
+      left:0;
+      width: 10px;
+      height: 10px;
+      border-left:2px solid #02a6b5;//角的侧边
+      border-top:2px solid #02a6b5;//角的侧边
+    }
+    &::after{
+      position: absolute;
+      content:"";
+      top:0;
+      right:0;
+      width: 10px;
+      height: 10px;
+      border-right:2px solid #02a6b5;//角的侧边
+      border-top:2px solid #02a6b5;//角的侧边
+    }
+    //在panel里，再新加一个div，同样设置伪元素
+    .panel-footer{
+      position: absolute;
+      bottom:0;
+      left:0;
+      width: 100%;
+      &::before{
+        position: absolute;
+        content:"";
+        bottom:0;
+        left:0;
+        width: 10px;
+        height: 10px;
+        border-left:2px solid #02a6b5;//角的侧边
+        border-bottom:2px solid #02a6b5;//角的侧边
+      }
+      &::after{
+        position: absolute;
+        content:"";
+        bottom:0;
+        right:0;
+        width: 10px;
+        height: 10px;
+        border-right:2px solid #02a6b5;//角的侧边
+        border-bottom:2px solid #02a6b5;//角的侧边
+      }
+    }
   }
 }
