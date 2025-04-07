@@ -45,6 +45,7 @@ header{
   //3列column里的中间那个要占5
   .column:nth-child(2){
     flex:5;
+    margin:0 0.125rem 0.1875rem;
   }
   .panel{
     position: relative;
@@ -102,5 +103,26 @@ header{
         border-bottom:2px solid #02a6b5;//角的侧边
       }
     }
+    //标题样式
+    h2{
+      height: 0.6rem;
+      color:#fff;
+      line-height: 0.6rem;
+      text-align: center;
+      font-size: 0.25rem;
+      font-weight: 400;
+    }
+    //图表区域
+    .chart{
+      height: 3rem;
+      background-color: #02a6b5;
+    }
   }
+}
+
+.no{
+
+  background: rgba(101,132,226,0.1);
+  padding: 0.1875rem ;
+
 }
